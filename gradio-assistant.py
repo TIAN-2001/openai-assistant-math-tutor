@@ -50,7 +50,8 @@ def slow_echo(usr_message, history):
             thread_id=chat_thread.id,
             run_id=run.id
     )
-    time.sleep(1)
+    print(f"Current Run ID is {run.id}\n")
+    time.sleep(0.2)
 
   #--store the current run to match it with the right response from the thread
   current_run = run.id
